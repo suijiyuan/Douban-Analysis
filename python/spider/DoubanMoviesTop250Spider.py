@@ -15,7 +15,7 @@ def main():
 
     year_pattern = re.compile(r'\d{4}')
 
-    file_name = '../../datasets/douban_movie_top250_' + time.strftime("%y_%m_%d", time.localtime()) + '.csv'
+    file_name = '../../datasets/douban_movies_top250_' + time.strftime("%y_%m_%d", time.localtime()) + '.csv'
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) '
