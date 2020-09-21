@@ -14,7 +14,7 @@ def main():
     datasets_directory_file_name_list = os.listdir(datasets_directory_path)
 
     if datasets_directory_file_name_list is None:
-        print("数据集名称列表获取异常, 地址: %s" % datasets_directory_path)
+        print('数据集名称列表获取异常, 地址: %s' % datasets_directory_path)
         return
 
     douban_movies_top250_file_list = [val for val in datasets_directory_file_name_list if
@@ -34,7 +34,7 @@ def main():
             for douban_movies_top250_file_line in douban_movies_top250_file_lines:
                 douban_movies_top250_item_elements = douban_movies_top250_file_line.split(',')
                 if len(douban_movies_top250_item_elements) < 8:
-                    print("解析单行记录异常, 单行记录: %s" % douban_movies_top250_file_line)
+                    print('解析单行记录异常, 单行记录: %s' % douban_movies_top250_file_line)
                     return
 
                 douban_movies_top250_item = DoubanMoviesTop250Item()
