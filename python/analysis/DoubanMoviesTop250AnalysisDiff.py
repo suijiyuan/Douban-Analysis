@@ -30,6 +30,7 @@ def main():
     dataset_count = dataset_count - 1
 
     # 在这里对集合进行运算
+    print(douban_movies_top250_name_set_list[dataset_count - 1] - douban_movies_top250_name_set_list[dataset_count - 2])
 
 
 if __name__ == '__main__':
